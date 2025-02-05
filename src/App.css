@@ -22,7 +22,7 @@ body {
 }
 
 .game-btn {
-  width: 12.5rem;
+  width: 13.5rem;
   height: 3.75rem;
   border-radius: 2.5rem;
   border: none;
@@ -47,20 +47,28 @@ body {
 
 .image-container {
   display: flex;
-  margin-top: 6.25rem;
+  margin-top: 7.5rem;
   width: 100%;
   justify-content: space-around;
 }
 
 .image-container > div {
   width: 21.875rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-  font-size: 2.5rem;
+  transition: transform 1s ease-in-out;
 }
 
 .image-container > div > img {
   width: 100%;
+}
+
+.rolling {
+  animation: roll 1s linear;
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
 }
