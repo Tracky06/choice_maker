@@ -23,7 +23,7 @@ function App() {
     
   }
 
-  const imagePath = `./images/dice-${player}.png`;
+  const imagePath = `${process.env.PUBLIC_URL}/images/dice-${player}.png`;
    
   return (
     <div className="main-body">
