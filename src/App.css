@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(120, 70%, 25%);
+  color: white;
+  font-family: "Permanent Marker";
+}
+
+.main-body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 3rem;
+  margin: 2.5rem;
+  text-align: center;
+}
+
+.game-btn {
+  width: 12.5rem;
+  height: 3.75rem;
+  border-radius: 2.5rem;
+  border: none;
+  display: block;
+  margin: 6.25rem auto 0;
+  cursor: pointer; 
+  background-color: rgb(204, 42, 42);
+  color: white;
+  font-size: 2rem;
+}
+
+.game-btn:hover {
+  opacity: 0.8;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.image-container {
+  display: flex;
+  margin-top: 6.25rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.image-container > div {
+  width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 2.5rem;
+}
+
+.image-container > div > img {
+  width: 100%;
+}
